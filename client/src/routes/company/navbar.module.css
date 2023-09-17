@@ -1,0 +1,173 @@
+/* Center elements both horizontally and vertically */
+.allCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for the company navigation bar */
+.companyNav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 55px;
+  padding: 5px 15px;
+  background: white;
+  z-index: 2;
+  border-bottom: 1px solid #6d0e9d;
+}
+
+/* Styles for the company navigation bar container */
+.companyNavDiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styles for the company name in the navigation bar */
+.companyNav > h2 {
+  color: #CF1350;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  cursor: pointer;
+  width: 20%;
+  min-width: fit-content;
+}
+
+/* Styles for navigation links container */
+.links {
+  width: 80%;
+  min-width: fit-content;
+}
+
+/* Styles for navigation links */
+.links > a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.83);
+  font-family: Lohit Bengali;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 100% */
+  margin: 0 10px;
+}
+
+/* Styles for the user section in the navigation bar */
+.user {
+  gap: 10px;
+  width: 20%;
+  min-width: 210px;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 100% */
+}
+
+/* Styles for the Log In button */
+.logIn {
+  border-radius: 8px;
+  background: #6d0e9d;
+  color: #fefdff;
+  padding: 6px 20px;
+  border: 1px solid #6d0e9d;
+}
+
+/* Styles for the Sign Up button */
+.signUp {
+  border: 1px solid #6d0e9d;
+  border-radius: 8px;
+  background: #fefdff;
+  color: #6d0e9d;
+  padding: 6px 20px;
+}
+
+/* Styles for the bars icon (for mobile view) */
+.barIcon {
+  display: none;
+  color: #6d0e9d;
+  cursor: pointer;
+}
+
+/* Styles for the user profile picture */
+.companyNav div img {
+  width: 30px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Styles for the user profile cover */
+.cover {
+  width: 120px;
+  align-items: "center";
+  justify-content: "center";
+  gap: 10px;
+  border-radius: 25px;
+  background: var(--secondary-putih, #f7f7f7);
+  padding: 5px 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Styles for the logout option container */
+.logoutOption {
+  position: absolute;
+  top: 55px;
+  right: 10px;
+  width: 200px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  background: var(--secondary-putih, #f9f9f9);
+  display: none;
+}
+
+/* Styles for the individual items in the logout option */
+.logoutOption > p {
+  padding: 3px 5px;
+  border-radius: 5px;
+  margin: 2px 0;
+  transition: 0.3ms;
+}
+
+/* Styles for the hover effect on logout option items */
+.logoutOption > p:hover {
+  background: var(--secondary-putih, #ffffff);
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+  /* Styles for mobile view navigation bar container */
+  .companyNavDiv {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    background: rgb(236, 235, 235);
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    padding: 10px;
+    transition: 1s;
+  }
+
+  /* Styles for mobile view navigation links and user section */
+  .links,
+  .user {
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Styles for the bars icon (visible in mobile view) */
+  .barIcon {
+    display: block;
+  }
+}

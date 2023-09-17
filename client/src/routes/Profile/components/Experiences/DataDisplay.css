@@ -1,0 +1,148 @@
+/* DataDisplay.css */
+
+.data-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 40px;
+  }
+.profile-component-container-all{
+    margin-top: -50px;
+}  
+  
+  .data-box {
+    background: #fff;
+    box-shadow: 5px 4px 4px 0px rgba(0, 0, 0, 0.25), 8px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    padding: 20px;
+    max-width: 890px; /* Adjust the width as needed */
+    width: 100%;
+    border-radius: 15px;
+    margin-left: 270px;
+    position: relative; /* Add position relative to allow absolute positioning of dots */
+  }
+  
+  .data-heading {
+    color: #6D0E9D;
+    font-family: Poppins, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .data-dates {
+    color: #6D0E9D;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .data-company {
+    color: #6D0E9D;
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .data-description-heading {
+    color: #6D0E9D;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .data-description {
+    color: #6D0E9D;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .dots-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+  }
+  
+  .dot {
+    width: 4px;
+    height: 4px;
+    background-color: #6D0E9D;
+    border-radius: 50%;
+  }
+  
+  .dropdown-profile {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    z-index: 1;
+  }
+  
+  .dropdown-profile button {
+    padding: 8px 16px;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    color: #6D0E9D;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-profile button:hover {
+    background-color: #f5f5f5;
+  } 
+  
+  @media (max-width: 576px) {
+    
+    .data-container {
+      max-width: 530px;
+      margin-top: 150px;
+      margin-left: -230px;
+      
+  }
+    .data-box {
+        border-radius: 5px;
+        padding: 10px;
+        width: auto;
+    }
+
+    .data-heading {
+        font-size: 20px;
+    }
+
+    .data-dates,
+    .data-company,
+    .data-description-heading,
+    .data-description {
+        font-size: 14px;
+    }
+
+    .dots-button {
+        top: 5px;
+        right: 5px;
+    }
+
+    .dot {
+        width: 3px;
+        height: 3px;
+    }
+
+    .dropdown-profile {
+        top: 30px;
+        right: 5px;
+    }
+
+    /* .profile-component-container-all {
+      width: 100%;
+      left: 0;
+    } */
+}

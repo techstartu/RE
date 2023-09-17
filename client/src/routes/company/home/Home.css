@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+html {
+  --color-primary: #cf1350;
+  --font-primary: "Red Hat Text";
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-primary) !important;
+}
+.company-home-main-container h1,
+.company-home-main-container h2,
+.company-home-main-container h3,
+.company-home-main-container h4,
+.company-home-main-container h5,
+.company-home-main-container h6,
+.company-home-main-container p {
+  /* margin: 0 !important; */
+  padding: 0 !important;
+}
+/* for mobile view adjusted the icons  */
+@media (max-width: 400px) {
+  .icons-section {
+    flex-direction: column;
+    gap: 5em !important;
+  }
+}
+/* for tablet view */
+@media screen and (max-width: 900px) {
+  .icons-section {
+    gap: 1em !important;
+  }
+}
+@media screen and (max-width: 900px) {
+  .icons-section {
+    gap: 1em !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .company-home-perfect-fit-heading {
+    width: 100%;
+  }
+}
+
+/* added some style to position h1 tag */
+.company-home-h1 {
+  position: relative;
+
+  bottom: 40px;
+}
+/* styling the icons */
+.icons-section {
+  width: 100%;
+  /* font-size: 7.2rem; */
+  justify-content: center;
+  align-items: center;
+  gap: 10em;
+  color: rgb(138, 23, 100) !important;
+}
+icons-section svg {
+  color: #cf1350;
+}
+/* adjust the position */
+.company-home-perfect-fit-desc-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.company-home-hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-inline: 2rem;
+  padding-block: 3rem;
+  background: linear-gradient(0deg, #081351 0%, #081351 100%),
+    rgba(0, 0, 0, 0.2);
+
+  @media (min-width: 740px) {
+    flex-direction: row;
+  }
+}
+
+.company-home-welcome-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  & h1 {
+    /* adjust the font-size */
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.09rem;
+    max-width: 30.8rem;
+    line-height: 1.6;
+
+    @media (min-width: 740px) {
+      max-width: 100%;
+      /* adjust the font-size */
+      font-size: 2.8rem;
+      line-height: 1.6;
+    }
+    @media (min-width: 1085px) {
+      max-width: 100%;
+      font-size: 4rem;
+    }
+    @media (min-width: 1162px) {
+      max-width: 40rem;
+      font-size: 4rem;
+    }
+  }
+
+  & h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    @media (min-width: 740px) {
+      max-width: 100%;
+      font-size: 2rem;
+    }
+    @media (min-width: 1085px) {
+      max-width: 100%;
+      font-size: 2.5rem;
+    }
+    @media (min-width: 1162px) {
+      max-width: 40rem;
+      font-size: 2.8rem;
+    }
+  }
+  & button {
+    background-color: var(--color-primary);
+    font-weight: 600;
+    max-width: 16.625rem;
+  }
+}
+
+.company-home-welcome-image {
+  max-width: 25.9rem;
+  & img {
+    width: 100%;
+  }
+}
+
+.discover-candidates-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 56.75rem;
+  margin-inline: auto;
+  gap: 1.5rem;
+  & h2 {
+    text-align: center;
+  }
+}
+
+.discover-candidates-select-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+  width: 100%;
+  @media (min-width: 769px) {
+    flex-direction: row;
+    padding-inline: 3rem;
+  }
+}
+
+.divider-div {
+  background-color: #081351;
+  border-radius: 2px;
+  height: 4px;
+  width: 70%;
+  margin-inline: auto;
+  @media (min-width: 769px) {
+    min-height: 40px;
+    width: 7px;
+    background: #081351;
+    border-radius: 2px;
+    margin-top: 1rem;
+  }
+}
+
+label {
+  display: block;
+}
+select {
+  display: inline-block;
+  padding-block: 5px;
+  padding-inline: 10px;
+  border-radius: 4px;
+  border: 1px solid #cf1350;
+  width: 100%;
+}
+
+.candidates-label-div {
+  width: 100%;
+  text-align: center;
+}
+.candidates-para {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.candidates-para-text {
+  font-weight: 500;
+}
+
+.company-home-perfect-fit-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  padding-inline: 3rem;
+  padding-block: 3rem;
+  flex-shrink: 0;
+  background: linear-gradient(0deg, #081351 0%, #081351 100%),
+    rgba(0, 0, 0, 0.2);
+
+  @media (min-width: 740px) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.company-home-welcome-para {
+  position: relative;
+  top: -55px;
+}
+
+.company-home-perfect-fit-heading {
+  color: white;
+  margin-bottom: 1rem !important;
+  /* adjust the margin */
+  margin-right: 15rem !important;
+}
+.company-home-perfect-fit-para {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 1rem !important;
+  max-width: 48.125rem;
+  /* adjust text */
+  text-align: start;
+}
+
+.company-home-perfect-fit-image {
+  @media (max-width: 1187px) {
+    margin-inline: auto;
+  }
+}
+.company-home-action-button {
+  background-color: var(--color-primary);
+  font-weight: 600;
+  min-width: 16.625rem;
+  font-size: larger;
+  padding: 15px 35px !important;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.company-home-action-button:hover {
+  background-color: #c0174d;
+}
+
+.company-home-action-button_1 {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.company-home-consultant-container {
+  padding-block: 3rem;
+  padding-inline: 2rem;
+  text-align: center;
+}
+
+.company-home-consultant-heading-container {
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+.company-home-consultant-para-container {
+  margin-bottom: 1rem;
+}
+
+.company-home-consultant-form-container {
+  max-width: 46rem;
+  margin-inline: auto;
+  border: 3px solid rgba(0, 0, 0, 0.219);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.137);
+}
+
+.company-home-consultant-form-container input,
+.company-home-consultant-form-container textarea {
+  display: block;
+  width: 100%;
+  padding-inline: 10px;
+  padding-block: 6px;
+  border-radius: 7px !important;
+  padding: 35px 15px !important;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.137);
+  border: 2px solid rgba(0, 0, 0, 0.164) !important;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.219) !important;
+  border-right: 3px solid rgba(0, 0, 0, 0.219) !important;
+  border-left: 3px solid rgba(0, 0, 0, 0.219) !important;
+  background: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background: rgba(0, 0, 0, 0.02) !important;
+}
+/* border color for input tags */
+.company-home-consultant-form-container input {
+  padding: 13px 15px !important;
+  /* border: 1px solid #cf134f80 !important; */
+}
+/* fixed for mobile view */
+@media (max-width: 500px) {
+  .company-home-perfect-fit-heading {
+    font-size: 2em;
+    width: 100%;
+  }
+}
+label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.2rem;
+  text-align: left;
+  margin-top: 0.8rem;
+}
+
+.consultant-form-top-div {
+  display: flex;
+  gap: 0.6rem;
+  & div {
+    width: 50%;
+  }
+}
+
+.consultant-form-submit-button {
+  margin-top: 30px;
+  width: 100%;
+  background-color: var(--color-primary);
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.company-home-links-container {
+  padding-block: 3rem;
+  padding-inline: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: #181332;
+  @media (min-width: 769px) {
+    grid-template-columns: repeat(3, 1fr);
+    padding-inline: 5rem;
+  }
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(5, 1fr);
+    padding-inline: 8rem;
+  }
+}
+
+.company-home-link-holder {
+  color: white;
+  & h6 {
+    text-transform: uppercase;
+  }
+}
+.company-home-link-holder ul {
+  line-height: 2rem;
+  margin-top: 1rem;
+  padding: 0;
+  list-style-type: none;
+}
+.company-home-link-holder a {
+  color: white;
+  text-decoration: none;
+}
+.company-home-link-holder a:hover {
+  text-decoration: underline white;
+}

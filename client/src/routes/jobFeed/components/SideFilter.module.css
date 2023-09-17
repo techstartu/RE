@@ -1,0 +1,102 @@
+/* Styles for heading (h3) elements */
+.h3 {
+  color: #000;
+  font-family: Red Hat Text;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  justify-content: left;
+  text-transform: capitalize;
+}
+
+/* Styles for heading (h5) elements */
+.h5 {
+  margin-left: 1px;
+  color: #000;
+  font-family: Red Hat Text;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  text-align: left;
+}
+
+/* Styles for paragraph (p) elements */
+.p {
+  margin-left: 5px;
+  color: #000;
+  font-family: Red Hat Text;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+/* Styles for the side filter container */
+.SideFilter {
+  border: 1px solid #cf1350;
+  border-radius: 10px;
+  margin-top: 30px;
+  width: 26%;
+}
+
+/* Styles for select dropdown elements */
+.select {
+  width: 200px;
+  border-radius: 10px;
+  border: 1px solid #cf1350;
+  padding: 5px 10px;
+  color: rgba(0, 0, 0, 0.49);
+  font-family: Red Hat Text;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+}
+
+/* Styles for the job type container */
+.JobType {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Styles for labels within the side filter */
+.SideFilter label {
+  margin: 3px 0;
+  color: #000;
+  font-family: Red Hat Text;
+  display: flex;
+  gap: 5px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+/* Styles for "more or less" text */
+.moreORless {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #1e1ef0;
+  font-family: Red Hat Text;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 700px) {
+  .SideFilter {
+    width: 80%;
+    margin-left: 32px;
+  }
+}

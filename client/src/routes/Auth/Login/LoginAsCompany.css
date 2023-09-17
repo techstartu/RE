@@ -1,0 +1,79 @@
+/* Reset default padding and margin for the entire body */
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* Styles for the company sign-in container */
+.company-SignIn-parent-container {
+    width: 43%;
+}
+
+/* Styles for the company sign-in button with registration link */
+.company-signIn-button-register {
+    height: 49.6px;
+    margin-bottom: 20px;
+}
+
+/* Styles for the "Sign In" and "Register" navigation buttons in the company sign-in form */
+.signIn-navigate-company-SignIn {
+    height: 49.6px;
+    width: 50%;
+    background-color: transparent;
+    border-width: 2px 0 0 0;
+    border-color: #cf1350;
+    font-weight: bold;
+}
+
+.register-navigate-company-SignIn {
+    height: 49.6px;
+    width: 50%;
+    border: 1px solid grey;
+    background-color: transparent;
+    font-weight: 600;
+}
+
+/* Styles for the heading in the company signup/login section */
+.company-signup-LogIn-heading {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* Styles for the heading in the email registration section */
+.register-with-email-heading-signIn {
+    margin-top: 15px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Styles for the email input field in the company sign-in form */
+.email-Input-Company-SignIn {
+    height: 55px;
+    border: 1px solid #cf1350;
+    margin-bottom: 15px;
+}
+
+/* Styles for the password input field in the company sign-in form */
+.pass-Input-Company-SignIn {
+    height: 55px;
+    border: 1px solid #cf1350;
+}
+
+/* Styles for the sign-in button in the company sign-in form */
+.signIn-button-register-company {
+    background-color: #cf1350 !important;
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: -10px;
+}
+
+/* Styles for the "Forgot Password?" link in the company sign-in form */
+.forgot-pass-SignIn-company {
+    margin-left: auto;
+    display: flex;
+    margin-bottom: 10px;
+}

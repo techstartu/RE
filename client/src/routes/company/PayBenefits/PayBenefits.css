@@ -1,0 +1,230 @@
+.pay-benefits-input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input-container-top-div {
+  color: #000;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  /* 125% */
+}
+
+.small-div {
+  @media (max-width: 400px) {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+  }
+}
+
+.input-container-bottom-div {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  @media (min-width: 500px) {
+    flex-direction: row;
+  }
+}
+
+.long-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.small-div input {
+}
+
+.small-div {
+  display: flex;
+  gap: 0.5rem;
+  width: 500px;
+
+  @media (min-width: 500px) {
+    width: 100%;
+  }
+}
+
+.tags-holder {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  height: 61px;
+  width: 202px;
+  border-radius: 30px;
+  background-color: white;
+  border: 1px solid #cf1350;
+  box-sizing: border-box;
+}
+
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+/* h4 {
+    margin-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 202px;
+    height: 61px;
+    color: #081351;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-inline: 0 !important;
+} */
+.bg {
+  background-color: #cf1350;
+  color: white;
+}
+
+.checked {
+  background-color: #cf1350;
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.PayBenefits-Title {
+  color: #0f151a;
+  text-align: center;
+  font-family: Red Hat Display;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  /* 126.316% */
+  margin-top: 80px;
+}
+
+.Header {
+  background-color: #cf1350;
+  height: 76px;
+}
+
+.payBenefits-to-text {
+  color: #ccc7c7;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  /* 150% */
+  margin-top: 5px;
+}
+
+.payBenefits-Benefits-Text {
+  color: #000;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  /* 125% */
+  padding-bottom: 20px;
+}
+
+.payBenefits-salaryRange {
+  height: 45px;
+}
+
+.payBenefits-SelectAll {
+  color: #081351;
+  font-family: Poppins;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  /* 150% */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-back-button {
+  margin-top: 30px;
+  width: 122px;
+  height: 43px;
+}
+
+.tech-detail-submit-button {
+  width: 300px;
+  height: 43px;
+  margin-top: 33px;
+  font-size: 15px;
+}
+
+.Horizontal-Line-below-header-parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.round-horizontal-1 {
+  background-color: #cf1350;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  text-align: center;
+  line-height: 2;
+  color: white;
+  opacity: 0.5;
+}
+
+.line-horizontal {
+  background-color: #cf1350;
+  height: 5px;
+  width: 200px;
+  margin-top: 12px;
+  opacity: 0.5;
+}
+
+.round-horizontal-2 {
+  background-color: #cf1350;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  text-align: center;
+  line-height: 2;
+  color: white;
+}
+
+.line-horizontal-2 {
+  background-color: #cf1350;
+  height: 5px;
+  width: 200px;
+  margin-top: 12px;
+}
+.payBenefits-bonus-heading {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .Horizontal-Line-below-header-parent {
+  }
+  .round-horizontal-1 {
+    width: 20%;
+  }
+  .round-horizontal-2 {
+    width: 20%; /* This line has a typo */
+  }
+}

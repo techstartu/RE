@@ -1,0 +1,448 @@
+/* App Table CSS Start */
+
+.table-container {
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+        6px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    overflow-x: hidden;
+    width: 95%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.allapplicants-heading {
+    text-align: start;
+    margin-left: 50px;
+    margin-top: 30px;
+    color: var(--shades-of-black-900, #333);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    align-self: flex-start;
+}
+.listings-heading {
+    text-align: start;
+    margin-left: 50px;
+    margin-top: 20px;
+    color: #cf1350;
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+}
+.custom-table {
+    width: 90%;
+    min-width: 800px;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.custom-table thead {
+    background: var(--white-secondary, #ece9fd);
+    /* Optional border below the header */
+}
+.custom-table tbody tr:nth-child(even) {
+    background: var(--white-tritary, #f6f6f6);
+}
+
+.custom-table tbody tr:nth-child(odd) {
+    background: var(--white-primary, #fff);
+}
+
+.custom-table th {
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+    vertical-align: middle; /* This ensures vertical alignment */
+    border-bottom: 1px solid #dadada;
+    text-transform: uppercase;
+    letter-spacing: 0.72px;
+}
+
+/* Vertically align content in the middle of the cells */
+.custom-table td {
+    padding: 10px;
+    vertical-align: middle; /* This ensures vertical alignment */
+    border-bottom: 1px solid #dadada;
+}
+
+.custom-table th {
+    font-weight: bold;
+}
+
+.stage-rectangle {
+    background: #cf1350;
+    border-color: #cf1350;
+    display: inline-block;
+    padding: 5px 5px;
+    border-radius: 8px;
+    color: #fff;
+}
+.status-rectangle {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: var(--green-secondary, #ddffcd);
+    border-radius: 8px;
+}
+.status-rectangle-cancel {
+    display: inline-block;
+    padding: 6px 12px;
+    background: var(--red-secondary, #ffd3d3);
+    border-radius: 8px;
+}
+.status-rectangle-hold {
+    display: inline-block;
+    padding: 6px 12px;
+    background: var(--orange-secondary, #ffe6c0);
+    border-radius: 8px;
+}
+
+.status-rectangle svg {
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.action-buttons svg {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.checkbox-container {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    position: relative;
+    cursor: pointer;
+}
+
+.pagination-apptable {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.pagination-apptable-button {
+    background-color: #cf1350;
+    font-family: Poppins;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.pagination-apptable-button:hover {
+    background-color: #9d57c0;
+}
+
+.pagination-apptable-page {
+    margin: 0 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 15px;
+    border: 2px solid #cf1350;
+    border-radius: 5px;
+    color: #cf1350;
+}
+
+/* App Table CSS End */
+
+/* App Search CSS Start */
+
+.container-app-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px; */
+    width: 95%;
+    margin-top: 20px;
+}
+
+.rectangle-app-search {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+        6px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.filter-button-app-search {
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-family: Inter;
+    color: var(--fonts-primary, #25213b);
+    background: #fff;
+    cursor: pointer;
+}
+.post-button-app-search {
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    width: 115px;
+    padding: 8px 16px;
+    font-family: Inter;
+    color: #fff;
+    cursor: pointer;
+    text-transform: capitalize;
+    background: #cf1350;
+}
+
+.filter-button-app-search {
+    border: 1px solid var(--fonts-stroke, #c6c2de);
+    background: var(--backgrounds-primary, #fff);
+}
+
+.search-bar-app-search {
+    display: flex;
+    width: inherit;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    padding: 5px;
+    background: var(--backgrounds-stripe, #f4f2ff);
+}
+
+.search-bar-app-search svg {
+    margin-right: 5px;
+}
+
+.dashboard-component-container3 {
+    display: flex;
+    flex-direction: column; /* Ensure children stack vertically */
+    margin-left: 0; /* Align children to the start (top) of the container */
+    @media (max-width: 1600px) {
+        margin-top: -165px;
+    }
+    @media (max-width: 1200px) {
+        margin-top: -550px;
+    }
+    @media (max-width: 600px) {
+        margin-top: -10px;
+        margin-left: -30px;
+    }
+}
+
+.main-container-for-applicants {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the container takes at least the full viewport height */
+}
+
+.footer-applicants {
+    margin-bottom: auto; /* Push the footer to the bottom */
+}
+
+.dropdown-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.search-bar-app-search input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    width: 100%;
+}
+/* .space {
+    flex: 1;
+  } */
+.dropdown-appsearch {
+    position: relative;
+}
+.dropdown-content-appsearch {
+    position: absolute;
+    width: 160%;
+    top: 100%;
+    left: -10px;
+    background: var(--backgrounds-primary, #fff);
+    border-radius: 4px;
+    border: 1px solid var(--fonts-stroke, #c6c2de);
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+}
+.label-dropdown-appsearch {
+    margin-top: 5px;
+}
+
+.dropdown-content-appsearch h3 {
+    margin: 0 0 5px;
+    font-size: 16px;
+}
+
+.dropdown-content-appsearch label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.dropdown-content-appsearch input {
+    margin-right: 5px;
+    cursor: pointer;
+}
+.dropdown-content-appsearch label input[type="radio"] {
+    margin-left: 35px;
+}
+
+.sub-container-for-applicants {
+}
+/* App Search CSS End */
+
+/* Job Listings CSS Start */
+
+.table-container2 {
+    border-radius: 4px;
+    background: var(--shades-of-black-white, #fff);
+    box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    overflow-x: hidden;
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 400px;
+    @media (max-width: 1600px) {
+    }
+    @media (max-width: 1200px) {
+        margin-top: 550px;
+        margin-left: 160px;
+        width: 70%;
+    }
+    @media (max-width: 600px) {
+        margin-top: 60px;
+        margin-left: 20px;
+    }
+}
+.listings-heading {
+    text-align: start;
+    margin-left: 50px;
+    margin-top: 20px;
+    color: #cf1350;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+}
+.filter-data-listings {
+    margin-left: 470px;
+    margin-top: -50px;
+}
+.status-rectangle-listings {
+    display: inline-block;
+    margin-left: -40px;
+    padding: 8px 50px;
+    border-radius: 12px;
+    font-family: Montserrat;
+    color: var(--light-theme-color-white, #fff);
+    background: var(--green, #6fcf97);
+    cursor: pointer;
+}
+.status-rectangle-listings-2 {
+    display: inline-block;
+    margin-left: -40px;
+    padding: 8px 50px;
+    border-radius: 12px;
+    font-family: Montserrat;
+    color: var(--light-theme-color-white, #fff);
+    background: var(--primary-orange, #fa976c);
+    cursor: pointer;
+}
+.custom-table-listings {
+    width: 90%;
+    min-width: 1000px;
+    border-collapse: collapse;
+    text-align: left;
+    margin-top: 20px;
+}
+.custom-table-listings thead {
+    background: #eaddf1;
+    color: #cf1350;
+    font-family: Montserrat;
+    /* Optional border below the header */
+}
+/* .custom-table-listings tbody tr:nth-child(even) {
+    background: var(--white-tritary, #F6F6F6);
+  }
+  
+  .custom-table-listings tbody tr:nth-child(odd) {
+    background: var(--white-primary, #FFF);
+  } */
+
+.custom-table-listings th {
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+    vertical-align: middle; /* This ensures vertical alignment */
+    border-bottom: 1px solid #dadada;
+    text-transform: uppercase;
+    letter-spacing: 0.72px;
+}
+
+/* Vertically align content in the middle of the cells */
+.custom-table-listings td {
+    padding: 10px;
+    vertical-align: middle; /* This ensures vertical alignment */
+    border-bottom: 1px solid #dadada;
+}
+
+.custom-table-listings th {
+    font-weight: bold;
+}
+
+/* Job Listings CSS End */
+
+@media (max-width: 768px) {
+    .post-button-app-search {
+        display: none;
+    }
+}
+.test900 {
+    margin-left: 250px;
+    @media (max-width: 1600px) {
+        margin-top: 150px;
+    }
+    @media (max-width: 1200px) {
+        margin-top: 550px;
+    }
+    @media (max-width: 600px) {
+        margin-top: 60px;
+        margin-left: 20px;
+    }
+}
+.test9001 {
+    margin-top: auto;
+}
+.test9002 {
+    width: 100%;
+    margin-top: 375px;
+}
+.dashboard-component-container32 {
+    display: flex;
+    flex-direction: column; /* Ensure children stack vertically */
+    margin-left: 0; /* Align children to the start (top) of the container */
+    @media (max-width: 1600px) {
+        margin-top: -15px;
+        margin-left: -120px;
+        width: 90%;
+    }
+    @media (max-width: 1200px) {
+        margin-top: -550px;
+    }
+    @media (max-width: 600px) {
+        margin-top: -10px;
+        margin-left: -30px;
+    }
+}

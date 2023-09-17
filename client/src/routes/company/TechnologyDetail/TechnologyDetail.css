@@ -1,0 +1,200 @@
+.form-button-div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.form-back-button {
+    background-color: white;
+    color: #000000;
+    border: 1px solid #cf134fa9;
+    margin-top: 0.8rem;
+    padding-inline: 2rem;
+    text-transform: capitalize !important;
+}
+/* adjust the margin for small screen */
+@media (max-width:500px) {
+    .tech-detail-submit-button{
+        margin-top: 28px !important;
+
+    }
+}
+
+.tech-detail-submit-button {
+    margin-top: 0.8rem;
+    background-color: #cf1350;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    text-transform: capitalize !important;
+
+}
+
+.create-account-heading-container {
+    margin-top: 50px;
+}
+.create-account-main-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+/* Styling for the heading container */
+.create-account-heading-container {
+    margin-bottom: 1.5rem;
+}
+
+/* Styling for the heading text */
+.create-account-heading {
+    width: 100%;
+    color: #0f151a;
+    text-transform: capitalize;
+    font-size: 3rem;
+}
+
+/* Styling for the form container */
+.create-account-form-container {
+    max-width: 46rem;
+    width: 100%;
+    /* adjust the margin*/
+    margin: 0rem auto;
+}
+
+/* Styling for select inputs */
+.create-account-form-container select {
+    display: block;
+    width: 100%;
+    padding: 17px;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: 1px solid #cf134f80;
+    background: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+/* Styling for labels */
+.create-account-form-container label {
+    /* increase font-weight */
+    font-weight: 500;
+    display: block;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+/* Styling for buttons */
+.form-button-div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 4.5rem;
+}
+
+.form-back-button,
+.tech-detail-submit-button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-back-button {
+    background-color: white;
+    color: #000000;
+    border: 1px solid #cf134fa9;
+    font-weight: bold;
+}
+
+.tech-detail-submit-button {
+    background-color: #cf1350;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border: none;
+}
+.Horizontal-Line-below-header-parent-tech {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+}
+.round-horizontal-1-tech {
+    background-color: #cf1350;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    text-align: center;
+    line-height: 2;
+    color: white;
+    opacity: 0.5;
+}
+.line-horizontal-tech {
+    background-color: #cf1350;
+    height: 5px;
+    width: 200px;
+    margin-top: 12px;
+    opacity: 0.5;
+}
+.round-horizontal-2-tech {
+    background-color: #cf1350;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    text-align: center;
+    line-height: 2;
+    color: white;
+}
+.line-horizontal-2-tech {
+    background-color: #cf1350;
+    height: 5px;
+    width: 200px;
+    margin-top: 12px;
+}
+
+.Header-tech {
+    height: 70px;
+    background-color: #cf1350;
+    width: 1526px;
+    margin-top: -48px;
+}
+.job-schedule-tech {
+    color: #000;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 125% */
+    padding-bottom: 15px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .create-account-form-container {
+        max-width: 80%;
+    }
+
+    .form-button-div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-back-button,
+    .tech-detail-submit-button {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+@media (max-width: 768px) {
+    .Horizontal-Line-below-header-parent-tech {
+        width: 100%;
+    }
+    .round-horizontal-1-tech {
+        width: 60px;
+    }
+    .round-horizontal-2-tech {
+        width: 60px;
+    }
+}

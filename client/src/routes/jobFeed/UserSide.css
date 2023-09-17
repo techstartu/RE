@@ -1,0 +1,602 @@
+.formContainer {
+  border-radius: 0px;
+  background: #e0e0e0;
+  box-shadow: 5px 5px 5px #2125296b, -5px -5px 5px #ffffffa6;
+}
+
+.formBtn {
+  color: black;
+  border: none;
+  width: 100%;
+  padding: 5px;
+  border-radius: 10px;
+  background: #e0e0e0;
+  box-shadow: 5px 5px 5px #2125296b, -5px -5px 5px #ffffffa6;
+}
+
+.formBtn:hover {
+  color: black;
+  background: transparent;
+  box-shadow: 5px 5px 5px #ffffffa6, -5px -5px 3px #2125296b;
+}
+
+.formBtnProfile {
+  border: none;
+  width: 40%;
+  padding: 5px;
+  border-radius: 10px;
+  background: #e0e0e0;
+  box-shadow: 5px 5px 5px #2125296b, -5px -5px 5px #ffffffa6;
+}
+
+.formBtnProfile:hover {
+  background: transparent;
+  box-shadow: 5px 5px 5px #ffffffa6, -5px -5px 3px #2125296b;
+}
+
+.formInput {
+  background: transparent;
+  box-shadow: 5px 5px 5px #ffffffa6, -2px -2px 5px #2125296b;
+}
+
+.formInput:focus {
+  border: none;
+  background: transparent;
+  box-shadow: 5px 5px 5px #ffffffa6, -1px -1px 2px #2125296b;
+}
+
+/* Job Feed Page CSS */
+.jobFeedPage {
+  background: #fff;
+  min-height: 100vh;
+}
+
+.searchCont {
+  display: flex;
+  justify-content: center;
+}
+
+.searchJobFieldText,
+.searchLocFieldText {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  color: #000000;
+  width: 40px;
+  height: 15px;
+  margin: auto;
+}
+
+.searchJobCont,
+.searchLocCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 70px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+}
+
+.searchJobField,
+.searchLocField {
+  width: 205px;
+  height: 15px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #5a5a5a;
+  border: none;
+}
+
+.searchJobIcon,
+.searchLocIcon {
+  width: 25px;
+  height: 25px;
+  margin: auto;
+}
+
+.jobFeedHeading {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.jobFeedDisplay {
+  max-height: 900px;
+  display: flex;
+  justify-content: center;
+  border-radius: 23px 23px 0 0;
+}
+
+.displayJobs {
+  background: #ffffff;
+  border-bottom: 1px solid #cf1350;
+  padding: 30px;
+}
+.jobFeedDisplay > div > .JOBS {
+  border-radius: 5px 0px 0px 0px;
+  background: #6d0e9d;
+  text-align: center;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 10px 0;
+}
+.jobFeedDisplay .capitalLetter {
+  height: 40px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background: #6d0e9d;
+  color: #fff;
+  text-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    5px -1px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+}
+.displayJobTitle,
+.selectedJobTitle {
+  color: #6d0e9d;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 125% */
+  margin: 0;
+}
+
+.displayJobPay {
+  float: right;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  color: #f9f9f9;
+  border-radius: 5px;
+  background: #6d0e9d;
+  padding: 5px;
+}
+
+.displayJobLocation {
+  color: #000;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+}
+.displayJobDescription {
+  color: #000;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 187.5% */
+  margin: 5px 0 0 50px;
+}
+.displayJobDescription2 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  max-height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 0 10px 10px;
+}
+
+.selectedJobDisplay {
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+}
+
+.selectedJobApplyBtn {
+  float: right;
+  padding: 10px 15px;
+  gap: 10px;
+  background: #6d0e9d;
+  border: 1px solid #6d0e9d;
+  border-radius: 25px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  color: #f9f9f9;
+}
+
+.selectedJobApplyBtn:hover {
+  background: #ffffff;
+  color: #6d0e9d;
+  border: 1px solid #6d0e9d;
+}
+
+.jobFeedShowMoreJobs {
+  background: #660099;
+  border: 1px solid #660099;
+  border-radius: 3px;
+  padding: 10px 15px;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #f9f9f9;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.jobFeedShowMoreJobs:hover {
+  background: #ffffff;
+  color: #6d0e9d;
+  border: 1px solid #660099;
+}
+
+/* Job Feed Page CSS */
+
+/* Edit Profile Page CSS */
+.editProfilePage {
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.editProfileHeader {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  color: #1e1e1e;
+}
+
+.editProfileRowHeader {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #06192d;
+}
+
+.editProfileLabel {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #06192d;
+}
+
+.editProdileInput {
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #06192d;
+  padding: 8px 5px;
+}
+
+.editProfileBtn {
+  border: 2px solid #6d0e9d;
+  border-radius: 5px;
+  padding: 10px;
+  background: #6d0e9d;
+  color: #ffffff;
+}
+
+.editProfileBtn:hover {
+  background: #ffffff;
+  color: #6d0e9d;
+}
+
+@media (max-width: 576px) {
+  .editProfileHeader {
+    font-size: 26px;
+    line-height: 40px;
+  }
+}
+
+/* Edit Profile Page CSS */
+.applyjobform input:not(input[type="file"]) {
+  border-radius: 5px;
+  border: 1px solid #6d0e9d;
+  color: #6d0e9d;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 200% */
+}
+.applyjobform input:disabled {
+  background: #dbc4e7;
+}
+.applyjobform p {
+  color: #000;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 200% */
+  margin: 0;
+}
+
+.selectedJobLocation {
+  color: #000;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+}
+
+.aboutTheJob {
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 150% */
+}
+.selectedJobDescription {
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+  text-decoration-line: underline;
+}
+.insideDescription {
+  color: #636363;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+}
+
+/* CustomPagination.css */
+
+/* Style the pagination container */
+.custom-pagination {
+  display: flex;
+  justify-content: end;
+  margin-right: 20px;
+  margin-top: 16px;
+}
+
+/* Style the pagination items */
+.custom-pagination .page-link {
+  background-color: white;
+  color: #000;
+}
+
+/* Style the active pagination item */
+.custom-pagination .page-item.active .page-link {
+  background: #cf1350;
+  color: white;
+  border: 1px solid #cf1350;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+.jobFeedList {
+  border-radius: 20px;
+  border: 0.6px solid #cf1350;
+  max-height: 800px;
+  min-width: 810px;
+  overflow-y: auto;
+}
+.jobCardInJobFeed {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 810px;
+  margin-bottom: 10px;
+}
+.jobCardInJobFeed p {
+  color: #1e1ef0;
+  font-family: Red Hat Text;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.jobCardInJobFeed button {
+  border-radius: 4px;
+  border: 1px solid #cf1350;
+  padding: 5px 10px;
+  background: white;
+  color: #0c0c0c;
+  font-family: Red Hat Text;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.displayJobs .EasyApplyPortion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.displayJobs .EasyApplyPortion button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 3px;
+  background: #cf1350;
+  width: 100px;
+  color: #fff;
+  font-family: Red Hat Text;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  padding: 10px 10px;
+  border: none;
+}
+.displayJobs .EasyApplyPortion .iconsForJobCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.displayJobs .EasyApplyPortion .iconsForJobCard > div {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.displayJobs .JobCardTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.displayJobs .JobCardTitle h3 {
+  color: #1e1ef0;
+  font-family: Red Hat Text;
+  font-size: 30px;
+  padding: 0;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.displayJobs .JobCardTitle h5 {
+  color: #000;
+  font-family: Red Hat Text;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  text-align: left;
+}
+.displayJobs .JobCardTitle p {
+  color: #000;
+  font-family: Red Hat Text;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.displayJobs .JobCardTitle .image {
+  border-radius: 10px;
+  border: 0.6px solid #e32424;
+  padding: 0px 28px;
+  height: 90px;
+  width: 160px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.displayJobs .SeeMore {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 5px;
+  color: #1e1ef0;
+  font-family: Red Hat Text;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.sideFilter {
+  min-width: 250px;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* Media query for screens with max width 1024px */
+@media (max-width: 1024px) {
+  .jobFeedDisplay {
+    max-height: none;
+  }
+  .jobFeedList {
+    max-height: none; /* Reset max height */
+    min-width: 100%; /* Make it full width */
+    overflow-y: visible; /* Allow vertical overflow */
+  }
+  .jobCardInJobFeed {
+    display: flex;
+    flex-direction: column;
+  }
+  .displayJobs {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Media query for screens with max width 768px */
+@media (max-width: 768px) {
+  .jobFeedList {
+    border: none; /* Remove the border */
+    min-width: auto; /* Allow natural width */
+  }
+  .displayJobs {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #cf1350;
+    border-radius: 12px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Media query for screens with max width 780px */
+@media (max-width: 780px) {
+  .displayJobs .JobCardTitle {
+    text-align: center;
+    width: auto;
+    gap: 10px;
+  }
+  .displayJobs .JobCardTitle .image {
+    display: none;
+  }
+  .displayJobs {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #cf1350;
+    border-radius: 12px;
+    margin-bottom: 10px;
+  }
+}

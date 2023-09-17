@@ -1,0 +1,293 @@
+/* Importing the "Poppins" font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Styling for the main container of the cover letter */
+.cover-letter-main-container {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center;
+  height: 198vh; /* Adjust the height as needed */
+}
+
+/* Styling for the heading container of the cover letter */
+.cover-letter-heading-container23 {
+  width: 100%;
+  height: 120px;
+  background: #cf1350;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 480px) {
+    width: 110%;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (max-width: 700px) {
+    width: 110%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Styling for the heading text of the cover letter */
+.cover-letter-heading {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+
+  /* Media queries for responsiveness */
+  @media (max-width: 480px) {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  @media (max-width: 700px) {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+  }
+}
+
+/* Styling for the contact container of the cover letter */
+.cover-letter-contact-container {
+  align-items: center;
+}
+
+/* Styling for the first contact question */
+.cover-letter-contact-question1 {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 3%;
+  max-width: 760px;
+
+  /* Media queries for responsiveness */
+  @media (max-width: 700px) {
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  text-transform: capitalize;
+  text-align: center;
+}
+
+/* Styling for the second contact question */
+.cover-letter-contact-question2 {
+  color: black;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 32px;
+  margin-top: 25px;
+
+  /* Media queries for responsiveness */
+  @media (max-width: 700px) {
+    color: black;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 15px;
+  }
+}
+
+/* Styling for contact paragraph text */
+.cover-letter-contact-para {
+  text-align: start;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+/* Styling for the information container */
+.cover-letter-info-container1 {
+  background: #fcfcfc;
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 13px;
+  width: 60%;
+  margin-top: 40px;
+
+  /* Media queries for responsiveness */
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+  @media (max-width: 700px) {
+    width: 110%;
+  }
+}
+
+/* Styling for the form within the information container */
+.cover-letter-form {
+  padding: 60px;
+  align-items: start;
+}
+
+/* Styling for the form elements */
+.cover-letter-form-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.cover-letter-info-container1 input,
+.cover-letter-info-container1 textarea {
+  display: block;
+  width: 100%;
+  padding-inline: 10px;
+  padding-block: 6px;
+  border-radius: 4px;
+  border: 1px solid #0000001a;
+  background: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+/* Styling for form labels */
+.label-for-life {
+  font-weight: 400;
+}
+
+.lalle {
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.cover-letter-info-container1 label {
+  display: flex;
+  align-items: start;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Styling for the first heading */
+.heading-size1 {
+  font-size: 40px;
+  font-weight: 600;
+  align-self: start;
+  margin-bottom: 20px;
+
+  /* Media queries for responsiveness */
+  @media (max-width: 700px) {
+    font-size: 28px;
+    font-weight: 700;
+    align-self: start;
+    margin-bottom: 0px;
+  }
+}
+
+/* Styling for the first form section heading */
+.cover-letter-form-section-heading1 {
+  margin-top: 60px;
+  align-self: start;
+  font-size: 40px;
+  font-weight: 500;
+  padding: 0;
+  display: flex;
+}
+
+/* Styling for the second form section heading */
+.cover-letter-form-section-heading12 {
+  margin-top: 60px;
+  align-self: start;
+  font-size: 40px;
+  font-weight: 500;
+  padding: 0;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+/* Styling for the button container */
+.cover-letter-button-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+
+/* Styling for the back button */
+.cover-letter-back-button1 {
+  background: transparent;
+  color: black;
+  border: 1px solid #cf1350;
+  height: 64px;
+  width: 136px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 39px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+/* Styling for the primary button */
+.button123 {
+  border-radius: 8px;
+  background: #cf1350;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  font-weight: 600;
+  border: solid 1px #cf1350;
+}
+
+/* Styling for the next button */
+.cover-letter-next-button1 {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #cf1350;
+  height: 64px;
+  width: 136px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 39px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+/* Hover effect for the back button */
+.cover-letter-back-button1:hover {
+  background: #cf1350;
+  color: white;
+  border: 1px solid #cf1350;
+}
+
+/* Styling for the next button */
+.cover-letter-next-button1 {
+  background: #cf1350;
+  border: 1px solid #cf1350;
+}
+
+/* Styling for the cover letter view page */
+.cover-letter-view {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent !important;
+}
+
+/* Styling for images within the cover letter view */
+.cover-letter-view img {
+  width: 100%;
+}
+
+/* Styling for the template button within the cover letter view */
+.cover-letter-view-template-button {
+  padding-inline: 1rem;
+  align-self: flex-end;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}

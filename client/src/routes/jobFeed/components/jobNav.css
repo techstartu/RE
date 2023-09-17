@@ -1,0 +1,110 @@
+/* Default styles */
+
+/* Container for job feed filters */
+.jobFeedFilter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 10px;
+    background: rgba(207, 19, 80, 0.02);
+    @media screen and (max-width: 768px) {
+        
+            font-size: 20px;
+            margin-right: 10px;
+                    
+}
+}
+
+/* Individual filter elements */
+.jobFeedFilter .filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    overflow: hidden;
+}
+.what-heading-jobNav {
+    font-size: 21px !important;
+}
+.parent-jobNav-filter {
+    display: flex;
+    margin-top: 15px;
+    padding-bottom: 10px;
+    @media screen and (max-width: 768px) {
+        
+        font-size: 20px;
+        
+                display: flex;
+                flex-direction: column;
+}
+}
+.jobNavFilter-2 {
+    padding: 10px !important;
+    font-size: 17px !important;
+}
+.jobFeedFilter label {
+    color: #000;
+    text-align: center;
+    font-family: Red Hat Text;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.6;
+    margin-right: 10px;
+}
+
+/* Input style */
+.jobFeedFilter input {
+  border-radius: 5px;
+  /* border-radius: 10px; */
+  border: 1.7px solid #df1a50;
+  font-size: 16px;
+  width: 3000px; /* Make the input element full width */
+  max-width: 300px; /* Add a maximum width */
+  padding: 10px 15px;
+}
+
+/* Button style */
+.jobFeedFilter button {
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background: #cf1350;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.15);
+    width: 100%; /* Make the button full width */
+    max-width: 160px; /* Add a maximum width */
+    font-size: 16px;
+    padding: 10px 30px;
+    margin-right: 5px;
+    top: 0px;
+}
+
+/* Link style */
+.jobFeedFilter a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: #1e1ef0;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .jobFeedFilter label {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+}
+
+/* Uncomment the following lines if you want to remove max-width constraints */
+/* .jobFeedFilter input,
+   .jobFeedFilter button {
+     max-width: 100%;
+   }
+*/

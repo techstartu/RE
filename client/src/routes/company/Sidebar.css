@@ -1,0 +1,181 @@
+/* Styles for the main dashboard component container */
+.dashboard-component-container3 {
+  margin-left: 300px;
+  min-width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: -webkit-fill-available;
+}
+
+/* Styles for the sidebar */
+.sidebar {
+  z-index: 3;
+  background: #081351;
+  color: #fff;
+  font-family: Poppins;
+  margin-top: 55px;
+  width: 280px; /* Set your desired width here */
+  position: fixed; /* Keep the sidenav fixed on the left side */
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+/* Styles for the footer container in the dashboard */
+.footer-container-dashboard {
+  /* margin-top: 100%; */
+}
+
+/* Styles for the heading in the dashboard */
+.dashboard-heading {
+  text-align: start;
+  font-family: Poppins;
+  font-size: 18px;
+  margin-top: 30px;
+  font-weight: 400;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+/* Styles for the buttons container in the sidebar */
+.sidebar-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  /* width: 100%; */
+}
+
+/* Styles for individual sidebar buttons */
+.sidebar-buttons > a {
+  padding-left: 25px;
+}
+
+/* Common styles for sidebar buttons */
+.sidebar-button {
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+/* Styles for the header sidebar button */
+.sidebar-head-button {
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Styles for active sidebar head button */
+.sidebar-head-button.active {
+  position: relative;
+  color: #CF1350;
+  text-decoration: none;
+  padding-right: 25px;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Styles for active sidebar button */
+.sidebar-button.active {
+  position: relative;
+  background: #fff;
+  color: #CF1350;
+  text-decoration: none;
+  padding-right: 25px;
+}
+
+/* Styles for the path of active sidebar button's SVG */
+.sidebar-button.active svg path {
+  stroke: #CF1350;
+}
+
+/* Styles for a pseudo-element before the active sidebar button */
+.sidebar-button.active:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -25px; /* Move the ellipse to the right side */
+  transform: translateY(-50%) rotateY(180deg); /* Add the rotateY transformation */
+  width: 55px;
+  height: 44px;
+  background: #fff;
+  border-top-left-radius: 20px; /* Adjust the border radius to create the ellipse */
+  border-bottom-left-radius: 20px;
+  z-index: 9999;
+  box-shadow: -3px 0 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for the open sidebar */
+.sidebar.open {
+  left: 300px;
+}
+
+/* Styles for the hamburger icon */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  padding: 15px;
+  position: sticky;
+  top: 90px;
+  left: 20px;
+  z-index: 5;
+}
+
+/* Styles for the bars in the hamburger icon */
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  /* Adjustments for mobile view */
+  .dashboard-component-container3 {
+    margin-left: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .sidebar {
+    left: -320px;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .dashboard-heading {
+    margin-top: 50px;
+  }
+
+  .sidebar-buttons {
+    margin-top: 40px;
+  }
+
+  .sidebar-button {
+    font-size: 12px;
+  }
+
+  .sidebar-buttons,
+  .dashboard-heading {
+    visibility: hidden;
+  }
+
+  .sidebar.open .sidebar-buttons,
+  .sidebar.open .dashboard-heading {
+    visibility: visible;
+  }
+}

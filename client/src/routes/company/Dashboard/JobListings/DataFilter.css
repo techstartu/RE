@@ -1,0 +1,38 @@
+/* Styles for a date filter container */
+.date-filter-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Styles for the date filter element */
+.date-filter {
+    display: flex;
+    align-items: center;
+    background: #f4f5f9;
+    border-radius: 30px;
+    padding: 10px;
+    width: 70%;
+    max-width: 600px;
+}
+
+/* Styles for filter buttons inside the date filter element */
+.filter-button {
+    border: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease-in-out;
+    flex: 1;
+    text-align: center;
+    color: #969ba0;
+    font-family: Montserrat;
+}
+
+/* Styles for an active filter button */
+.filter-button.active {
+    background: #6d0e9d;
+    color: white;
+    border-radius: 30px;
+}

@@ -1,0 +1,204 @@
+IMPORTANT : REACT HEROKU'S LINK: https://boiling-beach-52487-b897e4f8d94c.herokuapp.com/
+https://step200.azurewebsites.net/
+
+<----------------------------------------------------------------------------------------->
+<######################################### USER ##########################################>
+<----------------------------------------------------------------------------------------->
+
+ALL ENDPOINTS FOR PERSONAL INFO REST APIs           with token in request's headers
+http://localhost:4000/user/personalInfo/getData     (GET)
+http://localhost:4000/user/personalInfo/postData    (POST)
+{
+  "firstName": "Wazir",
+  "lastName": "Shehryar Ali",
+  "phNo": "09345655645643",
+  "address": "Skardu",
+  "country": "Pakistan",
+  "city": "Skardu",
+  "zipCode": "97780",
+  "linkednLink": "www.linkedn",
+  "twitterLink": "www.twitter"
+}
+
+
+http://localhost:4000/user/personalInfo/getSkills     (GET)
+http://localhost:4000/user/personalInfo/postSkills    (POST)
+{
+  "skills": [
+    "html",
+    "css",
+    "javasript"
+    ]
+}
+
+
+ALL ENDPOINTS FOR JOB EXPERIENCE REST APIs          with token in request's headers
+http://localhost:4000/user/jobExperience/getData    (GET)
+http://localhost:4000/user/jobExperience/postData   (POST)
+{
+  "jobTitle": "electrical",
+  "employmentType": "full time",
+  "industry": "IT",
+  "startDate": "2022-06-15",
+  "currentlyWorking": true,
+  "company": "Soltridge",
+  "companyWebsite": "soltridge.com",
+  "country": "Pakistan",
+  "state": "Islamabad", 
+  "city": "Islamabad", 
+  "description": "nothing yet",
+  "endDate": "it is optional"
+}
+
+
+ALL ENDPOINTS FOR Education REST APIs      with token in request's headers
+http://localhost:4000/user/education/getData    (GET)
+http://localhost:4000/user/education/postData   (POST)
+{
+  "school": "FAST NUCES",
+  "degree": "Computer Science",
+  "fieldOfStudy": "computer science",
+  "startYear": "2019",
+  "startMonth": "August",
+  "endYear": "2023",
+  "endMonth": "December",
+  "description": "nothing yet"
+}
+
+
+ALL ENDPOINTS FOR Course REST APIs     with token in request's headers
+http://localhost:4000/user/course/getData      (GET)
+http://localhost:4000/user/course/postData      (POST)
+{
+    "courseName": "Web Development",
+    "instituteName": "Coursera",
+    "startDate": "January, 2023",
+    "endDate": "march, 2023",
+    "description": "nothing simple html, css, and javascript"
+}
+
+
+ALL ENDPOINTS FOR CERTIFICATE REST APIs     with token in request's headers
+http://localhost:4000/user/certificate/getData    (GET)
+http://localhost:4000/user/certificate/postData    (POST)
+{
+"courseTitle": "MERN Developer",
+"organization": "Coursera",
+"issueDate": "january, 2022",
+"expiryDate": "March, 2025",
+"credentialID": "19K-3456",
+"credentialURL": "www.credential.com",
+"desrciption": "Nothing special about it"
+}
+
+
+ALL ENDPOINTS FOR AWARD REST APIs     with token in request's headers
+http://localhost:4000/user/award/getData    (GET)
+http://localhost:4000/user/award/postData   (POST)
+{
+    "awardTitle": "1st position of Web Developer",
+    "institute": "FAST NUCES, Islamabad",
+    "issueDate": "January, 2023",
+    "awardImage": "filhal to is se kam chala lo",
+    "desrciption": "anything for now"
+}
+
+
+ALL ENDPOINTS FOR PUBLICATION REST APIs     with token in request's headers
+http://localhost:4000/user/publication/getData    (GET)
+http://localhost:4000/user/publication/postData   (POST)
+{
+    "publicationTitle": "AI's Importance",
+    "publishedBy": "Shehryar",
+    "publicationURL": "www.publication",
+    "publishedDate": "January, 2023",
+    "description": "nothing good",
+    "members": "shehary, shahmeer, asher"
+}
+
+
+ALL ENDPOINTS FOR LANGUAGE REST APIs     with token in request's headers
+http://localhost:4000/user/language/getData   (GET)
+http://localhost:4000/user/language/postData  (POST)
+{
+    "language": "English",
+    "speakingLevel": "Intermediate",
+    "listeningLevel": "Intermediate",
+    "writingLevel": "Intermediate",
+    "readingLevel": "Intermediate"
+}
+
+
+<----------------------------------------------------------------------------------------->
+<######################################### COMPANY #######################################>
+<----------------------------------------------------------------------------------------->
+
+http://localhost:4000/company/login   (POST)
+{
+  "email": "vzirshehryar@gmail.com",
+  "password": "123"
+}
+
+http://localhost:4000/company/register   (POST)
+{
+  "email": "vzirshehryar@gmail.com",
+  "password": "123"
+}
+
+http://localhost:4000/company/setProfile    (POST)  with token of company in request's headers
+{
+    "name": "Ayan Company",
+    "teamSize": "1000-1500",
+    "phNo": "03461687987",
+    "website": "www.ayan.com",
+    "country": "Pakistan",
+    "city": "Skardu",
+    "address": "stak nala",
+    "about": "the biggest company ever existed"
+}
+http://localhost:4000/company/getProfile    (GET)   with token of company in request's headers
+
+http://localhost:4000/company/getDashboard    (GET)   with token of company in request's headers
+
+http://localhost:4000/company/manageHiringGetJobs    (GET)   with token of company in request's headers
+
+
+<----------------------------------------------------------------------------------------->
+<######################################### JOB #######################################>
+<----------------------------------------------------------------------------------------->
+
+http://localhost:4000/job/getalljobs    (GET)
+http://localhost:4000/job/getJob/:jobID    (GET) (get single job)
+
+ALL ENDPOINTS FOR JOBS RELATED TO USER REST APIs     with token of users in request's headers
+http://localhost:4000/job/apply/64d1001541502eadb0c8ee92  (POST) jobID in params
+{
+  "resume": "resume"
+}
+
+
+ALL ENDPOINTS FOR JOBS RELATED TO COMPANY REST APIs     with token of company in request's headers
+http://localhost:4000/job/getJobs   (GET)   (get all jobs of a company)
+http://localhost:4000/job/postJob   (POST) 
+{
+    "jobTitle": "Mechanical Engineering",
+    "jobType": "full time",
+    "jobLevel": "intermediate",
+    "maxSR": 100000,
+    "minSR": 60000,
+    "location": "skardu",
+    "Experience": "2years",
+    "applicationDeadline": "2nd july",
+    "jobDescription": "nothing yet"
+}
+
+ALL ENDPOINTS FOR JOBS RELATED TO COMPANY REST APIs     with token of company in request's headers
+http://localhost:4000/job/getApplicantssOfAJob/64d1001541502eadb0c8ee92   (GET) jobID in params  (get all applicants of a specific job)
+http://localhost:4000/job/getallapplicants    (GET) 
+
+ALL ENDPOINTS FOR JOBS RELATED TO COMPANY REST APIs     with token of company in request's headers
+http://localhost:4000/job/changeStage/64d1001541502eadb0c8ee92/64d1e06c62afa42d120f88a3   (PUT) /:jobID/:applicationID
+{
+  "stage": "Interview"
+}
+http://localhost:4000/job/deleteApplication/64d1001541502eadb0c8ee92/64d1e06c62afa42d120f88a3   (DELETE)  /:jobID/:applicationID

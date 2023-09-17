@@ -1,0 +1,60 @@
+/* AddExperiences.css */
+
+.container-add-exp {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 77.7%;
+    min-height: 100vh;
+    left: 290px;
+    
+  }
+  
+  .rectangle-add-exp {
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 3px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    padding: 20px;
+    text-align: center;
+    width: 70%;
+    border-radius: 12px;
+    height: 450px;
+    display: flex; /* Add Flexbox display */
+    flex-direction: column; /* Align children vertically */
+    justify-content: center;
+  }
+  
+  .experience-heading {
+    color: #6D0E9D;
+    font-family: Poppins;
+    margin: 0;
+  }
+  .svg-container {
+    display: flex; /* Use Flexbox to center SVG horizontally */
+    justify-content: center; /* Center SVG horizontally */
+    align-items: center; /* Center SVG vertically */
+    margin-top: 20px; /* Add margin to separate the heading and the SVG */
+  }
+
+  
+  /* svg {
+   
+    width: 100px;  Set a specific width for the SVG 
+    height: 100px;
+  } */
+  
+  /* Add any other specific styles as needed */
+
+  /* Media queries for mobile responsiveness */
+  @media (max-width: 576px) {
+    .container-add-exp {
+      margin-left: -270px;
+      margin-top: -270px ;
+    }
+    
+    .rectangle-add-exp {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+}

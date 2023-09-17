@@ -1,0 +1,21 @@
+/* Resetting default padding and margin for the entire document */
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling for a horizontal line */
+.Line {
+    background-color: black;
+    width: 937px; /* Line width */
+    height: 1px; /* Line thickness */
+    margin-top: 20px; /* Spacing above the line */
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+    /* Adjusting line width to fit smaller screens */
+    .Line {
+        width: auto;
+    }
+}

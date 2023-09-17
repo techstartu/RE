@@ -1,0 +1,403 @@
+/* Reset default styles and set the font family for the entire document */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+/* Styles for the main container of the company dashboard */
+.company-dashboard-main-container {
+  overflow-x: hidden;
+  padding-block: 1rem;
+  padding-inline: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.8rem;
+
+  /* Media query for larger screens */
+  @media (min-width: 768px) {
+    margin-left: 300px;
+  }
+
+  /* Media query for even larger screens */
+  @media (min-width: 1200px) {
+    margin-left: 300px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Styles for the welcome section in the company dashboard */
+.company-dashboard-welcome-div {
+  grid-column: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  background-color: #cf1350;
+  padding-top: 1rem;
+  padding-inline: 1rem;
+  border-radius: 5px;
+
+  /* Media query for medium-sized screens */
+  @media (min-width: 600px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /* Media query for even larger screens */
+  @media (min-width: 1200px) {
+    grid-column: 1 / span 3;
+    justify-content: space-between;
+  }
+}
+
+/* Styles for the heading in the welcome section */
+.company-dashboard-heading {
+  font-size: 2rem;
+  color: white !important;
+
+  /* Media queries for responsive font sizes */
+  @media (min-width: 600px) {
+    font-size: 2.1rem;
+  }
+  @media (min-width: 768px) {
+    font-size: 1.3rem;
+  }
+  @media (min-width: 900px) {
+    font-size: 2rem;
+  }
+  @media (min-width: 1100px) {
+    font-size: 2.5rem;
+  }
+}
+
+/* Styles for the paragraph in the welcome section */
+.company-dashboard-para {
+  color: white;
+  font-weight: 500;
+  font-size: 2.2rem;
+}
+
+/* Styles for the image in the welcome section */
+.company-dashboard-welcome-div img {
+  width: auto;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Styles for the container of job cards in the company dashboard */
+.company-dashboard-job-cards-container {
+  padding-block: 1.3rem;
+  display: flex;
+  gap: 0.7rem;
+  overflow-x: auto;
+
+  /* Media query for medium-sized screens */
+  @media (min-width: 600px) {
+    gap: 1.5rem;
+  }
+
+  /* Media query for even larger screens */
+  @media (min-width: 1200px) {
+    grid-column: 1 / span 3;
+  }
+}
+
+/* Styles for individual job cards in the company dashboard */
+.company-dashboard-job-card {
+  position: relative;
+  min-width: 387px;
+  flex-shrink: 0;
+  background-color: white;
+  box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  padding-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 110px;
+  gap: 0.7rem;
+}
+
+/* Styles for the pseudo-element before the job card */
+.company-dashboard-job-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 23%;
+  background-color: #cf135026;
+  -webkit-mask-image: url("/public/manage-card.svg");
+  mask-image: url("/public/manage-card.svg");
+}
+
+/* Styles for the top section of job cards */
+.company-dashbaord-job-card-top-div {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Styles for the paragraph within the top section of job cards */
+.company-dashbaord-job-card-top-div-para {
+  position: relative;
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Styles for the job card statistics with icons */
+.company-dashboard-job-card-top-div-para {
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+/* Styles for the container of statistics with icons */
+.company-dashboard-stats-with-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(35, 193, 10, 0.15);
+  border-radius: 30px;
+  padding: 3px 8px;
+  gap: 6px;
+}
+
+/* Styles for the middle section of job cards */
+.company-dashboard-job-card-middle-div {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 8rem;
+}
+
+/* Styles for the bottom section of job cards */
+.company-dashboard-job-card-bottom-div {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-right: 8rem;
+}
+
+/* Styles for the container of job cards on the main file */
+.company-dashboard-job-cards-div {
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+  gap: 1.25rem;
+}
+
+/* Styles for the Recent Job Table Component */
+.recent-job-table-component {
+  background: white;
+  box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  padding-top: 1.2rem;
+  padding-bottom: 6rem;
+  padding-inline: 1.56rem;
+}
+
+/* Styles for the job table component in the company dashboard */
+.company-dashboard-job-table-comp {
+  grid-column: auto/span 2;
+  overflow-x: hidden;
+  border-radius: 5px;
+  padding-block: 1rem;
+  padding-inline: 1rem;
+  box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.25);
+
+  /* Media query for even larger screens */
+  @media (min-width: 1200px) {
+    grid-column: 1 / span 2;
+  }
+}
+
+/* Styles for the container of recent job posts */
+.recent-job-post-table-container {
+  overflow-x: auto;
+}
+
+/* Styles for the top row of the recent job table */
+.recent-job-top-row {
+  max-width: 1187px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styles for the heading in the recent job table top row */
+.company-dashboard-recent-job-top-row-heading {
+  font-size: 20px !important;
+}
+
+/* Styles for the buttons in the recent job table top row */
+.recent-job-top-row-buttons {
+  & button {
+    background-color: #f4f5f9;
+    /* padding-inline: 3rem; */
+    border-radius: 50px;
+  }
+  :nth-child(1) {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  :nth-child(2) {
+    border-radius: 0px;
+  }
+  :nth-child(3) {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+}
+
+/* Styles for the recent job table */
+.company-dashboard-recent-job-table {
+  min-width: 100%;
+  margin-top: 1.2rem;
+  border-radius: 4px;
+
+  & thead {
+    color: #081351;
+    background-color: #f8dce5;
+    text-align: left;
+  }
+  & tbody {
+    text-align: left;
+  }
+}
+
+/* Styles for individual rows in the recent job table */
+.recent-job-table > tbody > tr {
+  border-bottom: 1px solid #eaddf1;
+}
+
+/* Styles for table cells in the recent job table */
+.recent-job-table > tbody > tr > td {
+  padding-block: 1rem;
+}
+
+/* Styles for table headings in the recent job table */
+.recent-job-table-headings {
+  padding-block: 1rem;
+}
+
+/* Styles for the pagination footer in the recent job table */
+.recent-job-table-pagination-footer {
+  max-width: 1187px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* Styles for the pagination buttons and information */
+.recent-job-table-pagination-footer > div {
+  display: flex;
+  gap: 0.7rem;
+  /* outline: 1px solid black; */
+  padding-inline: 1rem;
+}
+
+/* Styles for the pie chart holder */
+.pie-chart-holder {
+  border-radius: 5px;
+  padding-block: 1rem;
+  box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  display: grid;
+}
+
+/* Styles for the container of the candidate pie chart */
+.candidate-pie-chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  & h3 {
+    /* text-align: left; */
+    margin-right: auto;
+    padding-inline: 1rem;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; /* 130% */
+    letter-spacing: -0.32px;
+  }
+  & div {
+    align-self: flex-start;
+  }
+}
+
+/* Styles for the bottom section of the pie chart container */
+.pie-chart-bottom-div {
+  min-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-right: 1rem;
+  gap: 2%;
+}
+
+/* Styles for individual sections within the pie chart */
+.pie-chart-bottom-div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Styles for the span elements representing colors in the pie chart */
+.pie-chart-span {
+  display: block;
+  height: 12px;
+  width: 12px;
+  border-radius: 4px;
+  align-self: flex-start;
+}
+
+/* Styles for the span representing the shortlisted section */
+.span-shortlisted {
+  background-color: #9747ff;
+  position: relative;
+}
+
+/* Styles for the label after the shortlisted section */
+.span-shortlisted::after {
+  content: "Hired";
+  position: absolute;
+  left: 16px;
+  bottom: -5px;
+  text-transform: capitalize;
+  color: #464255;
+  font-size: 14px;
+}
+
+/* Styles for the span representing the hired section */
+.span-hired {
+  background-color: #d4ace9;
+  position: relative;
+}
+
+/* Styles for the label after the hired section */
+.span-hired::after {
+  content: "Interviewed";
+  position: absolute;
+  left: 16px;
+  bottom: -5px;
+  text-transform: capitalize;
+  color: #464255;
+  font-size: 14px;
+}
+
+/* Styles for the span representing the rejected section */
+.span-rejected {
+  background-color: #6d0e9d;
+  position: relative;
+}
+
+/* Styles for the label after the rejected section */
+.span-rejected::after {
+  content: "Shortlisted";
+  position: absolute;
+  left: 16px;
+  bottom: -5px;
+  text-transform: capitalize;
+  color: #464255;
+  font-size: 14px;
+}

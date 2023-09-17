@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.login-form .ant-card-body {
+  height: 90vh;
+}
+.gx-card-widget  {
+  padding: 0;
+  box-shadow: 0 0 5px 5px rgb(0 0 0 / 3%);
+  border-radius: 10px;
+}
+@media screen and (min-width: 767px) {
+  .login-form-inputs {
+  width: 400px;
+  }
+  }
+@media screen and (max-width: 767px) {
+.login-form-inputs {
+width: 260px;
+}
+}
+
+.ant-menu-title-content
+{
+  color:"#FFFFFF" !important
+}
+
+
+.ant-table-thead .ant-table-cell {
+  background: #00bdf8 !important;
+  color: #ffffff !important;
+  font-family: "OpenSans SemiBold";
+  font-size: 30px;
+  padding: 4px 10px 0px 10px !important;
+}
+
+
+.ant-table-content {
+  border: 1px solid #00bdf8;
+  border-radius: 10px;
+}
+.ant-table-content .ant-table-row .ant-table-row-level-0 {
+  border: 1px solid red !important;
+}
+:where(.css-dev-only-do-not-override-1s3dcof).ant-table-wrapper table {
+  overflow: hidden;
+}
+:where(.css-dev-only-do-not-override-1s3dcof).ant-pagination
+  .ant-pagination-item-active {
+  
+  color: #000;
+ 
+  background-color: transparent !important;
+}
+:where(.css-dev-only-do-not-override-1s3dcof).ant-pagination {
+  color: #1b1e1f;
+  font-size: 26px;
+  background-color: transparent !important;
+}
+.ant-pagination-item {
+  border: 1px solid #02bc77;
+}
+
+.ant-pagination-item-link .anticon {
+  vertical-align: 2.5px !important;
+}
+
+.trigger {
+  padding-left: 24px;
+  font-size: 22px !important;
+}
+
+.login-form .ant-card-body {
+  height: 90vh;
+}

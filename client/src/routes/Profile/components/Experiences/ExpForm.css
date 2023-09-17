@@ -1,0 +1,271 @@
+
+
+.form-container-exp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 140vh;
+  
+}
+.form-container-edu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 155vh;
+  
+}
+.form-container-cour {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+/* .shadow-exp {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 6px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  background: #FFF;
+  padding: 20px;
+  border-radius: 18px;
+  max-width: 70%;
+} */
+
+.name-container-exp {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px; /* Add space between first name and last name */
+}
+.new-name-container-exp{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    
+}
+.input-group-exp {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.input-group-exp-1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 49.5%;
+  }
+
+.email-container-exp {
+  margin-top: 20px; /* Add some space between the name container and email input */
+  display: flex;
+  flex-direction: column; /* Ensure the label and input field are stacked vertically */
+}
+
+.phone-container-exp {
+  margin-top: 20px; /* Add some space between the email container and phone input */
+  display: flex;
+  flex-direction: column; /* Ensure the label and input field are stacked vertically */
+}
+.address-container-exp{
+    margin-top: 20px; /* Add some space between the email container and phone input */
+    display: flex;
+    flex-direction: column;
+}
+.description-container-exp{
+    margin-top: 20px; /* Add some space between the email container and phone input */
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.label-exp {
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  color: #000;
+}
+.curr-work {
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    color: #000;
+    margin-top: 40px;
+     /* Add some space between the label and the toggle button */
+  }
+  
+.toggle-container {
+    
+    display: flex; /* Add this line to display the toggle button side by side with the label */
+    align-items: center;
+  }
+  
+  .switch {
+    position: relative;
+    margin-top: -32px;
+    margin-left: 220px;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #6d0e9d;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #6d0e9d;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+.required-exp {
+  color: #ff0000;
+}
+
+.input-field-exp {
+  font-family: Poppins;
+  font-size: 17px;
+  color: #6d0e9d;
+  border: 1px solid #6d0e9d;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%; /* Set the width of the input fields to 100% */
+  
+}
+.input-field-exp::placeholder {
+  color: #D3D3D3 !important;
+}
+.input-field-exp-1 {
+    font-family: Poppins;
+    font-size: 17px;
+    color: #6d0e9d;
+    border: 1px solid #6d0e9d;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+    
+  }
+
+/* Add placeholder color for input fields */
+.input-field-exp::placeholder {
+  color: #6d0e9d;
+  font-family: Poppins;
+}
+.button-container-exp button{
+    outline: none;
+    border: none;
+    background-color: #6d0e9d;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 10px 16px;
+    width: 100%;
+    transition: 100ms;
+    cursor: pointer;
+    font-family: Poppins;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.button-container-exp button:hover{
+    background-color: #9639d4;
+}
+.button-apply-jobs button{
+  outline: none;
+  border: none;
+  background-color: #6d0e9d;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 10px 16px;
+  width: 60%;
+  transition: 100ms;
+  cursor: pointer;
+  font-family: Poppins;
+  margin-top: -80px;
+  margin-bottom: 10px;
+  margin-left: 400px;
+}
+.button-apply-jobs button:hover{
+  background-color: #9639d4;
+}
+.file-input-wrapper {
+  position: relative;
+}
+
+.custom-file-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  font-family: Poppins;
+  font-size: 14px;
+  color: #6d0e9d;
+  background: #D4ACE9;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  height: 57px;
+  width: 65%;
+}
+.input-field-awards {
+  
+  font-family: Poppins;
+  font-size: 20px;
+  color: #6d0e9d;
+  border: 1px solid #6d0e9d;
+  border-radius: 4px;
+  padding: 10px;
+  width: 130%;
+}
+
+@media screen and (max-width: 576px) {
+  .input-field-exp {
+    font-size: 16px;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+}

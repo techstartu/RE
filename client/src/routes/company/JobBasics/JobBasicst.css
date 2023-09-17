@@ -1,0 +1,163 @@
+/* Reset default styles for all elements */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main container for the create account section */
+.create-account-main-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    padding: 3rem 2rem; /* Combined padding shorthand */
+    text-align: center;
+}
+
+/* Styling for the heading container */
+.create-account-heading-container {
+    margin-bottom: 1.5rem;
+}
+
+/* Styling for the heading text */
+.create-account-heading-container h1 {
+    width: 100%;
+    color: #0f151a;
+    text-transform: capitalize;
+    font-size: 3rem; /* Increase the font size for better visibility */
+}
+
+/* Styling for the form container */
+.create-account-form-container {
+    max-width: 46rem;
+    width: 100%; /* Allow the form to take full width on smaller screens */
+    margin: 2rem auto; /* Center the form horizontally and add margin on top */
+}
+
+/* Styling for input and textarea elements */
+.job-basics-submit-button {
+    margin-top: 7rem; /* Increase top margin for separation */
+    padding: 10px; /* Add padding to the button */
+    width: 100%;
+    background-color: #cf1350;
+    color: white; /* Set text color for better contrast */
+    font-size: 1.2rem; /* Adjust font size */
+    border: none; /* Remove default button border */
+    cursor: pointer;
+    text-transform: capitalize !important;
+}
+create-account-form-container textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: 1px solid #cf134f80;
+    background: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+/* Styling for labels */
+.create-account-form-container label {
+    /* changed font-weigth to initial */
+    font-weight: initial;
+    color: #0f151a;
+    display: block;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+/* Styling for the submit button */
+.create-account-submit-button {
+    margin-top: 7rem;
+    padding: 10px;
+    width: 100%;
+    background-color: #cf1350;
+    color: white;
+    /* text-transform: lowercase !important; */
+    font-size: 1rem;
+    /* change font-weight */
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+.Horizontal-Line-below-header-parent-jobBasics {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+}
+.round-horizontal-1-jobBasics {
+    background-color: #cf1350;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    text-align: center;
+    line-height: 2;
+    color: white;
+    opacity: 0.5;
+}
+.line-horizontal-jobBasics {
+    background-color: #cf1350;
+    height: 5px;
+    width: 200px;
+    margin-top: 12px;
+    opacity: 0.5;
+}
+.round-horizontal-2-jobBasics {
+    background-color: #cf1350;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    text-align: center;
+    line-height: 2;
+    color: white;
+}
+.line-horizontal-2-jobBasics {
+    background-color: #cf1350;
+    height: 5px;
+    width: 200px;
+    margin-top: 12px;
+}
+
+.Header-jobBasics {
+    height: 70px;
+    background-color: #cf1350;
+    width: 1526px;
+    margin-top: -48px;
+}
+
+.companyIndustry-jobBasics {
+    color: #000;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 125% */
+}
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .create-account-form-container {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    /* You can add more responsive styles as needed */
+}
+@media (max-width: 768px) {
+    .Horizontal-Line-below-header-parent-jobBasics {
+        width: 100%;
+    }
+    .round-horizontal-1-jobBasics {
+        width: 60px;
+    }
+    .round-horizontal-2-jobBasics {
+        width: 60px;
+    }
+}

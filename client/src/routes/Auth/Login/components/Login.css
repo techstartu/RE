@@ -1,0 +1,246 @@
+.note {
+  /* margin-top: 10px; */
+  text-align: center;
+  /* padding: 10px; */
+  /* align-content: flex-end; */
+  /* background: -webkit-linear-gradient(left, #212529, #212529); */
+  /* background: none; */
+  /* color: rgb(255, 251, 251);
+    font-weight: bolder; */
+  /* line-height: 80px; */
+}
+
+.loginBox {
+  /* background: #e0e0e0; */
+  /* border-radius: 10px; */
+  /* padding: 40px 30px; */
+  /* box-shadow:  20px 20px 60px #bebebe, -20px -20px 60px #ffffff; */
+  /* background: linear-gradient(145deg, #cacaca, #f0f0f0); */
+  border-radius: 0px;
+
+  background: #e0e0e0;
+  box-shadow: 5px 5px 5px #2125296b, -5px -5px 5px #ffffffa6;
+}
+/* .backgroundIMAGE {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 500px;
+  background-image: url(/public/authBG2.png);
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+} */
+.topHeadingOfAuth {
+  color: #6d0e9d;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56.5px; /* 117.708% */
+  letter-spacing: 0.96px;
+  max-width: 500px;
+  margin-top: 60px;
+  text-align: center;
+}
+.Card {
+  font-family: Poppins;
+  width: 692px;
+  padding: 0;
+  padding-bottom: 30px;
+  background: #ffffff;
+  box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+.signUp,
+.signIn {
+  margin: 0;
+  padding: 25px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: Poppins;
+  color: #fff;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 500px) {
+  .backgroundIMAGE {
+    background-image: url(/public/authBG.png);
+  }
+  .Card {
+    width: 350px;
+  }
+}
+.signupsignin {
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+.signupsignin > div {
+  width: 50%;
+  height: 100%;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.72px;
+  background-color: #cf1350;
+  border: 1px solid #cf1350;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.loginHeading {
+  color: #000;
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 93.75% */
+  letter-spacing: 0.64px;
+}
+.LoginBtn {
+  width: 126px;
+  height: 43px;
+  background: #ffffff;
+  border: 1px solid #6d0e9d;
+  border-radius: 3px;
+}
+
+.hireLoginBtn:hover {
+  background: transparent;
+  box-shadow: 5px 5px 5px #ffffffa6, -5px -5px 3px #2125296b;
+}
+
+.hireLoginBtn1 {
+  background: transparent;
+  box-shadow: 5px 5px 5px #ffffffa6, -5px -5px 3px #2125296b;
+}
+
+.jobLoginBtn:hover {
+  background: transparent;
+  box-shadow: 5px 5px 5px #ffffffa6, -5px -5px 3px #2125296b;
+}
+
+.loginInput {
+  width: 100%;
+  height: 60px;
+  border: 1px solid #cf1350;
+  padding-left: 10px;
+}
+
+.loginBtn {
+  top: 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+  background: #cf1350;
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 83.333% */
+  letter-spacing: 0.72px;
+}
+
+.inputIcons {
+  border-radius: 3px;
+  border: 1px solid #dedede;
+  background: #ffffff;
+  width: 126px;
+  height: 43px;
+  gap: 10px;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 10px;
+}
+.accountLink {
+  font-size: 15px;
+  font-family: Poppins;
+  margin-top: 30px;
+}
+.accountLink a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: Poppins;
+}
+
+.rememberMe form {
+  float: left;
+}
+
+.rememberMe a {
+  float: right;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-family: Poppins;
+}
+
+.text-with-lines {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: black;
+}
+
+.text {
+  padding: 0 10px;
+}
+.commonBtn {
+  background: #660099;
+  height: 43px;
+  width: 126px;
+  color: white;
+}
+.labelColor {
+  padding-top: 12px;
+  color: black;
+}
+.l-head {
+  color: #000;
+  /* text-align: center; */
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  /* 125% */
+  text-transform: capitalize;
+}
+
+.p-head {
+  color: #000;
+  /* text-align: center; */
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  /* 250% */
+  text-transform: capitalize;
+  opacity: 0.5;
+}

@@ -1,0 +1,371 @@
+.ncard {
+    height: 307px;
+    width: 748px;
+    border-radius: 10px;
+    border: 1px solid #cf1350;
+}
+.mbtn {
+    margin-top: 50px;
+}
+.ncards {
+    width: 748px;
+    height: 165px;
+    border-radius: 10px;
+    border: 1px solid #cf1350;
+}
+.div-box-main-color {
+    width: 100%;
+    background-color: #b1083e;
+    height: 250px;
+    border-radius: 16px 16px 0px 0px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.div-box-main-color-heading {
+    color: #fff;
+    font-size: 36px;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    width: 40%;
+    text-align: center;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 25px;
+    background-color: #cf1350;
+    margin-top: 250px;
+    @media (max-width: 768px) {
+        color: #fff;
+        font-size: 24px;
+        font-family: Poppins, sans-serif;
+        font-weight: 700;
+        width: 60%;
+        text-align: center;
+        height: 140px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 25px;
+        background-color: #8b0e35;
+        margin-top: 250px;
+    }
+}
+.ncardss {
+    width: 748px;
+    height: 72px;
+    border-radius: 10px;
+    border: 1px dashed #cf1350;
+}
+.di {
+    width: 665px;
+    height: 267px;
+    border-radius: 10px;
+    border: 1px dashed #cf1350;
+}
+
+.jbtn {
+    width: 562px;
+    height: 49px;
+    border-radius: 6px;
+    border: 1px solid #cf1350;
+    background: #cf1350;
+    color: #fffbfb;
+    font-family: Red Hat Text;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.jbtns {
+    background-color: #fff;
+
+    color: #000;
+    font-family: Red Hat Text;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.cbtn {
+    width: 748px;
+    height: 49px;
+}
+.bcard {
+    width: 665px;
+    height: 267px;
+    border-radius: 10px;
+    border: 1px dashed #cf1350;
+}
+
+.stp1 {
+    /* margin-top: 134px; */
+    width: 59px;
+    height: 26px;
+    color: #000;
+    font-family: Red Hat Text;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    display: flex !important;
+    justify-content: start !important;
+    align-items: start !important;
+}
+.stp2 {
+    width: 63px;
+    height: 26px;
+    color: #000;
+    font-family: Red Hat Text;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.mdiv {
+    margin-top: 120px;
+}
+.dpad {
+    margin-top: 54px;
+}
+.lhi {
+    line-height: 12px;
+}
+
+.dpage {
+    width: 1190px;
+    flex-shrink: 0;
+    border-radius: 20px 20px 20px 20px;
+    border: 1px solid #cf1350;
+}
+.dhead {
+    color: #000;
+    font-family: Red Hat Text;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.phead {
+    color: #000;
+    font-family: Red Hat Text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: lowercase;
+}
+.dli {
+    color: #000;
+    font-family: Red Hat Text;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    /* width: 856px; */
+}
+.dlli {
+    margin-top: 110px;
+}
+.dheadli {
+    color: #000;
+    font-family: Red Hat Text;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-top: 9px;
+}
+.dbtn {
+    width: 562px;
+    height: 49px;
+    border-radius: 6px;
+    border: 1px solid #cf1350;
+    background: #cf1350;
+    margin-top: 110px;
+    margin-left: 200px;
+}
+
+.carbon {
+    width: 100px;
+    height: 100px;
+}
+.aphe {
+    width: 88px;
+    height: 19px;
+    top: -34480px;
+    left: 9872px;
+    color: #1e1ef0;
+    font-family: Red Hat Text;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.dhr {
+    width: 182.176px;
+    height: 0px;
+    padding: 0 15px;
+}
+.dheading {
+    color: #000;
+    font-family: Red Hat Text;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    padding: 0 20px;
+}
+.dl {
+    color: #000;
+    font-family: Red Hat Text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+/* .pr {
+  width: 26px;
+  display: inline-block;
+  height: 13px;
+} */
+.dlp {
+    width: 473px;
+    height: 60px;
+    margin-top: 50px;
+}
+likbtn {
+    width: 40px;
+    height: 40px;
+    fill: #cf1350;
+    stroke-width: 1px;
+    stroke: #cf1350;
+}
+.stp {
+    margin-left: 67rem;
+}
+
+.bgimg img {
+    border-radius: 20px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 200px;
+}
+
+.dbox {
+    width: 382px;
+    height: 186px;
+    position: absolute;
+    top: 130px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: linear-gradient(
+        133deg,
+        #fbf9f9 13.24%,
+        rgba(207, 19, 80, 0.8) 100%
+    );
+    /* position: absolute;
+  margin: auto;
+  top: 50px; */
+}
+.dcard {
+    height: 184px;
+    padding: 10px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #fbf9f9;
+}
+bg {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 1) 6%,
+        rgba(227, 227, 227, 1) 6%,
+        rgba(227, 228, 230, 1) 8%,
+        rgba(230, 230, 232, 1) 100%
+    );
+}
+.dloc {
+    border-radius: 20px;
+    background: #fbf9f9;
+}
+.dl {
+    color: #000;
+    font-family: Red Hat Text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.dapp {
+    width: 894px;
+    height: 114px;
+
+    border-radius: 20px;
+    background: #fbf9f9;
+}
+.dabtn {
+    width: 558px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #cf1350;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+}
+.dgabtn {
+    width: 558px;
+    height: 48px;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #cf1350;
+}
+
+@media (max-width: 500px) {
+    .dpage {
+        width: 350px;
+    }
+    .dpage .dbox {
+        width: 200px;
+    }
+    d .Card {
+        width: 320px;
+    }
+    .dpage .dhead {
+        font-size: 24px;
+    }
+    .dpage .phead,
+    .dpage .dl {
+        font-size: 14px;
+    }
+    .dheading {
+        font-size: 18px;
+    }
+    .dpad {
+        width: 350px;
+        padding: 0 10px;
+    }
+    .dapp {
+        width: 100%;
+        height: fit-content;
+    }
+    .dabtn,
+    .dgabtn {
+        width: 100%;
+    }
+}

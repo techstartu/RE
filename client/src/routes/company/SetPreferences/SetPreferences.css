@@ -1,0 +1,74 @@
+/* Style for section headings in forms */
+.form-section-heading {
+    text-align: left;
+    margin-top: 1rem !important; /* Add top margin */
+    margin-bottom: 0.5rem !important; /* Add bottom margin */
+}
+
+/* Style for left-aligned headings */
+.heading-left-align {
+    text-align: left;
+    margin-top: 1rem !important; /* Add top margin */
+}
+
+/* Create a flex container for aligning elements */
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Set the gap between flex items */
+}
+
+/* Style for checkboxes within the form */
+.create-account-form-container input[type="checkbox"] {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 4px;
+    /* Change the color of the checkbox */
+    color: #cf1350;
+}
+
+/* Style for elements with class 'input-pref123' */
+.input-pref123 {
+    accent-color: #cf1350;
+    top: 10px;
+    position: relative;
+}
+
+/* Reset margin for all labels */
+label {
+    margin: 0;
+}
+
+/* Style for paragraphs with class 'para-pref' */
+.para-pref {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* Style for 'Add Email' button */
+.Perfrences-AddEmail-Button {
+    color: #d63d3d;
+    background-color: transparent;
+    font-size: 24px;
+    display: block;
+    margin-right: auto;
+    margin-bottom: 25px; /* Add bottom margin */
+    padding: 7px;
+    border-radius: 4px;
+    border: 1px solid;
+}
+
+/* Style for text elements with class 'sendUpdates-pref' */
+.sendUpdates-pref {
+    color: #000;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* Set line height */
+}
+
+/* Style for elements with class 'input-pref' */
+.input-pref {
+    margin-top: 18px; /* Add top margin */
+}

@@ -1,0 +1,492 @@
+/* Form.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: #cccacc;
+  border-radius: 5px;
+}
+
+/* Optional: When hovering over the scrollbar */
+::-webkit-scrollbar-thumb:hover {
+  background: #c4c2c4;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.shadow {
+  border-radius: 10px;
+  border: 1px solid #cf1350;
+  background: #fff;
+  padding: 30px;
+  width: 70%;
+  min-width: 350px;
+  box-shadow: none;
+}
+
+.name-container {
+  display: flex;
+
+  gap: 10px; /* Add space between first name and last name */
+}
+.new-name-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+.input-group-profile {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.email-container {
+  margin-top: 20px; /* Add some space between the name container and email input */
+  display: flex;
+  flex-direction: column; /* Ensure the label and input field are stacked vertically */
+}
+
+.phone-container {
+  margin-top: 20px; /* Add some space between the email container and phone input */
+  display: flex;
+  flex-direction: column; /* Ensure the label and input field are stacked vertically */
+}
+.address-container {
+  margin-top: 20px; /* Add some space between the email container and phone input */
+  display: flex;
+  flex-direction: column;
+}
+.linkedin-container {
+  margin-top: 20px; /* Add some space between the email container and phone input */
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group-profile,
+name-container,
+input-group-profile {
+  margin-top: 20px;
+}
+
+.label {
+  color: #000;
+  font-family: Red Hat Text;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.required {
+  color: #ff0000;
+}
+
+.input-field {
+  font-family: Poppins;
+  font-size: 17px;
+  border: 1px solid #6d0e9d;
+  padding: 10px;
+  width: 100%; /* Set the width of the input fields to 100% */
+  border-radius: 10px;
+  border: 1px solid #cf1350;
+}
+.input-field::placeholder {
+  color: #d3d3d3 !important;
+}
+input[type="date"]::-webkit-datetime-edit-text,
+input[type="date"]::-webkit-datetime-edit-month-field,
+input[type="date"]::-webkit-datetime-edit-day-field,
+input[type="date"]::-webkit-datetime-edit-year-field {
+  color: #888;
+}
+input[type="date"].input-field::-webkit-datetime-edit-text,
+input[type="date"].input-field::-webkit-datetime-edit-month-field,
+input[type="date"].input-field::-webkit-datetime-edit-day-field,
+input[type="date"].input-field::-webkit-datetime-edit-year-field {
+  color: #6d0e9d;
+}
+
+/* Add placeholder color for input fields */
+.input-field::placeholder {
+  color: #6d0e9d;
+  font-family: Poppins;
+}
+.button-container button {
+  border-radius: 10px;
+  border: 1px solid #cf1350;
+  background: #cf1350;
+  outline: none;
+  color: #fff;
+  font-family: Red Hat Text;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  padding: 10px 16px;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Sidenav CSS Start */
+
+.sidenav {
+  background: #6d0e9d;
+  color: #fff;
+  font-family: Poppins;
+
+  width: 300px; /* Set your desired width here */
+  position: fixed; /* Keep the sidenav fixed on the left side */
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.profile-heading {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+  font-family: Poppins;
+}
+
+.sidenav-buttons {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 15px;
+  margin-left: 10px;
+  font-size: 16.5px;
+  width: 100%;
+  /* width: 100%; */
+}
+
+.sidenav-button {
+  padding: 10px;
+  padding-left: 30px;
+  cursor: pointer;
+  font-family: Poppins;
+  text-decoration: none;
+  color: #fff;
+}
+
+.sidenav-button.active {
+  position: relative;
+  background: #fff;
+  color: #6d0e9d;
+  text-decoration: none;
+  padding-right: 25px;
+  margin-left: -9px;
+}
+
+.sidenav-button.active:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -25px; /* Move the ellipse to the right side */
+  transform: translateY(-50%) rotateY(180deg); /* Add the rotateY transformation */
+  width: 55px;
+  height: 44px;
+  background: #fff;
+  border-top-left-radius: 20px; /* Adjust the border radius to create the ellipse */
+  border-bottom-left-radius: 20px;
+  z-index: 9999;
+  box-shadow: -3px 0 0px rgba(0, 0, 0, 0.2);
+}
+.progress-container {
+  height: 120px;
+  width: 120px;
+  margin-top: -10px;
+}
+
+.progress-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align the circle and percentage vertically with the profile heading */
+  margin-top: 20px;
+}
+.progress-ring {
+  width: 50px; /* Adjust the size of the circle */
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: relative;
+}
+.progress-fill {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  clip: rect(
+    0,
+    50px,
+    50px,
+    25px
+  ); /* Clip the circle to create a half-circle effect */
+  background: #fff;
+  position: absolute;
+  transform-origin: 100% 50%; /* Set the origin to right side to fill from right to left */
+}
+
+.percentage-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #6d0e9d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  margin-top: 10px;
+  left: 50px; /* Move the percentage circle to the right side */
+}
+
+.percentage {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.user-icon {
+  /* margin-top: -50px;
+    cursor: pointer; */
+  margin-top: -30px;
+  cursor: pointer;
+  position: relative;
+  margin-left: 30px;
+}
+.dropdown-profile-log {
+  /* position: absolute; */
+  top: auto;
+  bottom: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  width: 25%;
+}
+
+.logout-button-profile {
+  display: block;
+  width: 100%;
+  padding: 4px 4px; /* Adjust padding for the smaller button */
+  font-size: 12px;
+  font-family: Poppins;
+  color: #6d0e9d;
+  text-align: left;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.logout-button-profile:hover {
+  background-color: #f0f0f0;
+}
+.dropdown-profile-log.drop-up {
+  bottom: auto;
+  top: 100%;
+}
+.sidenav.open {
+  width: 250px;
+}
+.hamburger-sidenav {
+  display: none;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.hamburger-sidenav.open {
+  display: block;
+}
+
+.bar-sidenav {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+/* Sidenav CSS End   */
+
+/*Post Jobs CSS Start*/
+
+.form-container-postjobs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 175vh;
+}
+.shadow2 {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    6px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  background: #fff;
+  padding: 30px;
+  border-radius: 18px;
+  width: 65%;
+}
+.form-container-compprofile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200vh;
+}
+.postjobs-heading {
+  color: #000;
+  text-align: start;
+  font-family: Poppins;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+.compprofile-heading {
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+.dashboard-component-container {
+  height: 175vh;
+  margin-left: 280px;
+}
+.dashboard-component-container2 {
+  height: 100vh;
+  margin-left: 280px;
+}
+
+.compprofile-image-box {
+  position: relative;
+
+  left: 260px;
+  border: 7px solid #6d0e9d;
+  background: #f5f7fa;
+  border-radius: 5%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Set the desired size for the profile image box */
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+.compprofile-image-box::after {
+  content: "";
+
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(transparent, rgba(255, 255, 255, 0.5));
+  pointer-events: none;
+  z-index: 1;
+}
+.default-compprofile-text {
+  position: relative;
+  top: 50%;
+  left: 65px;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  color: #6d0e9d;
+  font-family: Poppins;
+  font-weight: bold;
+}
+.compprofile-edit-icon {
+  position: relative;
+  bottom: -10px;
+  left: 70px;
+  /* Add styles for your pencil icon */
+  cursor: pointer;
+}
+
+/*Post Jobs CSS End*/
+@media (max-width: 768px) {
+  .new-name-container,
+  .name-container {
+    flex-direction: column;
+  }
+  .sidenav {
+    width: 0;
+    z-index: 999;
+  }
+
+  .sidenav.open {
+    width: 200px;
+  }
+
+  .hamburger-sidenav {
+    display: block;
+  }
+
+  .profile-heading {
+    margin-top: 0;
+  }
+
+  .sidenav-buttons {
+    margin-top: 20px;
+  }
+  .sidenav-button.active:before {
+    /* width: 55px; */
+    height: 40px !important;
+  }
+  .sidenav-button {
+    font-size: 14.5px;
+  }
+  .sidenav-buttons,
+  .progress-circle,
+  .user-dropdown-container,
+  .profile-heading {
+    visibility: hidden;
+  }
+  .sidenav.open .sidenav-buttons,
+  .sidenav.open .progress-circle,
+  .sidenav.open .user-dropdown-container,
+  .sidenav.open .profile-heading {
+    visibility: visible;
+  }
+  .user-icon {
+    margin-top: 20px !important;
+  }
+  .progress-circle {
+    margin-top: 60px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .dashboard-component-container,
+  .dashboard-component-container2 {
+    /* Add top margin on smaller screens */
+    padding: 10px;
+    width: 100%;
+  }
+
+  .compprofile-edit-icon {
+    bottom: -5px;
+  }
+  .form-container-compprofile {
+    margin-top: 280px;
+    height: 100vh;
+    margin-left: -300px;
+  }
+  .form-container-postjobs {
+    margin-top: 280px;
+    height: 100vh;
+    margin-left: -300px;
+  }
+
+  .compprofile-image-box {
+    margin-left: -110px;
+  }
+}
